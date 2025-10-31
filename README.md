@@ -6,3 +6,9 @@ The original impetus was me not wanting to rely on external sites to get my ip f
 Instead the router sends the request containing ipv4,ipv6,hostname,username etc to this server, which then updates the actual records.
 This has the benefit of running locally.
 
+# Usage
+
+```bash
+# use the duckdns backend for example
+python3 ezddns.py --backend=duckdns
+```
