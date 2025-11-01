@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  ezddns:
+    build: .
+    image: ezddns
+    environment:
+      - PORT=8666
+      - EZDDNS_BACKEND=duckdns
+      - PYTHONUNBUFFERED=1
+    ports:
+      - "8666:8666"
+    restart: always
